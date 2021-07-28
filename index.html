@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Frontend Mentor | REST Countries API</title>
+</head>
+
+<body>
+    <nav class='navbar'>
+        <span class='nav-link'><a href="/"><i class="fas fa-globe-asia"></i> Where in the world?</a></span>
+        <span class='nav-link' id='mode'><i class="fa-moon" id='moon'></i>Dark mode</span>
+    </nav>
+    <div class='container'>
+        <div class='flash'><span class='flash-button'>X</span><span class='flash-message'></span></div>
+        <div class="input">
+            <div class="igroup">
+                <i class="fas fa-search"></i>
+                <input id="search_bar" type="text" name="country" placeholder="Search for a country...">
+                <ul id='search_countries'>
+                    <!-- <li>Africa</li>
+                    <li>Americas</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>Oceania</li> -->
+                </ul>
+            </div>
+            <div class="filter">
+                <span name='region' id='region'>Filter by region</span>
+                <ul id='dropdown'>
+                    <li class='dropdown-item'>Africa</li>
+                    <li class='dropdown-item'>Americas</li>
+                    <li class='dropdown-item'>Asia</li>
+                    <li class='dropdown-item'>Europe</li>
+                    <li class='dropdown-item'>Oceania</li>
+                </ul>
+            </div>
+        </div>
+        <div class="countries">
+            <!-- country not found -->
+            <!-- <div class="card">
+                <div class="flag">
+                    <img src="https://restcountries.eu/data/ind.svg" alt="flag">
+                </div>
+                <div class="data">
+                    <h3>India</h3>
+                    <ul>
+                        <li>Population: 1295210000</li>
+                        <li>Region: Asia</li>
+                        <li>Capital: New Delhi</li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    <script src="./scripts/api.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/autoComplete.js"></script>
+
+
+</body>
+
+</html>

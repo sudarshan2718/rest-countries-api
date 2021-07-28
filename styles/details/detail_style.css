@@ -1,0 +1,209 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  background-color: rgba(250, 250, 250, 0.185);
+  font-family: "Nunito Sans", sans-serif;
+  color: #111517;
+}
+
+.dark {
+  color: white;
+  background-color: #111517;
+}
+
+.display {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  color: inherit;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  box-shadow: 0px 2px 3px rgba(128, 128, 128, 0.192);
+}
+.navbar span:first-child {
+  font-weight: 700;
+}
+.navbar span:last-child {
+  transform: scale(0.9);
+}
+.navbar span:last-child i {
+  margin-right: 5px;
+  transform: scale(0.8);
+}
+.navbar span:last-child:hover {
+  cursor: pointer;
+}
+
+.dark .navbar {
+  box-shadow: none;
+  background-color: #2b3945;
+}
+
+.container {
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.185);
+  padding: 50px 6%;
+}
+.container .back a {
+  border-radius: 0.25em;
+  border: 1px solid rgba(250, 250, 250, 0.185);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
+  padding: 0.3rem 1.5rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.568);
+}
+.container .back a i {
+  margin-right: 1.5em;
+  transform: scale(0.7);
+}
+.container .country-display {
+  width: 100%;
+  padding-top: 4rem;
+}
+.container .country-display .flag {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.container .country-display .flag img {
+  border-radius: 1rem;
+  height: 100%;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.container .country-display .information {
+  padding-top: 3rem;
+  width: 100%;
+}
+.container .country-display .information .borders {
+  display: flex;
+  flex-direction: column;
+}
+.container .country-display .information .borders .border-countries {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.container .country-display .information .borders .border-countries span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  margin: 0.5em 0.2em;
+  border-radius: 0.25em;
+  border: 1px solid rgba(250, 250, 250, 0.185);
+  padding: 0.3rem 1.5rem;
+  color: rgba(0, 0, 0, 0.568);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
+}
+.container .country-display .information .borders .border-countries span:hover {
+  cursor: pointer;
+}
+.container .country-display .information .data-1 {
+  margin: 3rem 0;
+}
+.container .country-display .information .data-1 li {
+  margin: 0.5em 0;
+}
+.container .country-display .information .data-2 {
+  margin: 3rem 0;
+}
+.container .country-display .information .data-2 li {
+  margin: 0.5em 0;
+}
+@media (min-width: 780px) {
+  .container {
+    padding: 50px 4%;
+  }
+  .container .country-display {
+    display: grid;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container .country-display .flag {
+    height: 100%;
+    width: 100%;
+  }
+  .container .country-display .flag img {
+    width: 95%;
+    max-height: 75%;
+  }
+  .container .country-display .information {
+    padding-top: none;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr;
+    grid-template-areas: "name name" "data1 data2" "borders borders";
+    row-gap: 6%;
+  }
+  .container .country-display .information .country-name {
+    grid-area: name;
+  }
+  .container .country-display .information .data-1 {
+    margin: 0;
+    grid-area: data1;
+  }
+  .container .country-display .information .data-1 li {
+    margin: 0.5em 0;
+  }
+  .container .country-display .information .data-2 {
+    grid-area: data2;
+    margin: 0;
+  }
+  .container .country-display .information .data-2 li {
+    margin: 0.5em 0;
+  }
+  .container .country-display .information .borders {
+    grid-area: borders;
+  }
+  .container .country-display .information .borders .border-countries {
+    margin-bottom: 0;
+  }
+}
+
+.dark .container {
+  background-color: #111517;
+}
+.dark .container .back a {
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.11);
+  background-color: #2b3945;
+  color: white;
+}
+.dark .container .country-display .information .borders .border-countries span {
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.11);
+  background-color: #2b3945;
+  color: white;
+}/*# sourceMappingURL=detail_style.css.map */

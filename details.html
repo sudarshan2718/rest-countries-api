@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/details/detail_style.css">
+    <title>Frontend Mentor | REST Countries API</title>
+</head>
+
+<body>
+    <nav class='navbar'>
+        <span class='nav-link'><a href="/"><i class="fas fa-globe-asia"></i> Where in the world?</a></span>
+        <span class='nav-link' id='mode'><i class="fa-moon" id='moon'></i>Dark mode</span>
+    </nav>
+    
+    <div class="container">
+        <div class="back">
+            <a href="/index.html"><i class="fas fa-arrow-left"></i>Back</a>
+        </div>
+        <div class="country-display">
+            <div class="flag">
+                <img alt="flag image">
+            </div>
+            <div class="information">
+                <h2 class="country-name"></h2>
+                <ul class='data-1'>
+                    <li><strong>Native Name:</strong> <span id="native_name"></span></li>
+                    <li><strong>Population:</strong> <span id='population'></span></li>
+                    <li><strong>Region:</strong> <span id='region'></span></li>
+                    <li><strong>Sub Region:</strong> <span id='sub_region'></span></li>
+                    <li><strong>Capital:</strong> <span id='capital'></span></li>
+                </ul>
+                <ul class='data-2'>
+                    <li><strong>Top Level Doman:</strong> <span id='tld'></span></li>
+                    <li><strong>Currencies:</strong> <span id='currency'></span></li>
+                    <li><strong>Languages:</strong> <span id='langs'></span></li>
+                </ul>
+                <div class="borders">
+                    <h4 class='country-border'>Border countries:</h4>
+                    <div class='border-countries'>
+                        <!-- <a href="">Afganistan</a>
+                        <a href="">Bangladesh</a>
+                        <a href="">Butan</a>
+                        <a href="">China</a> -->
+                        <!-- <a href="">Myanmar</a>
+                        <a href="">Nepal</a>
+                        <a href="">Pakistan</a>
+                        <a href="">Sri Lanka</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/details/detail_page.js"></script>
+</body>
+
+</html>
