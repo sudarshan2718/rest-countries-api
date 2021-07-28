@@ -133,6 +133,6 @@ if (localStorage.getItem('country') !== 'undefined') {
     load_by_full_name(localStorage.getItem('country'))
     localStorage.setItem('country', 'undefined');
 } else {
-    window.location = '/index.html'
+    window.location = 'https://sudarshanvemarapu.github.io/rest-countries-api/index.html'
 }
 
