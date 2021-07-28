@@ -23,7 +23,7 @@ fetch('https://sudarshanvemarapu.github.io/rest-countries-api/countries.json').t
 function lettersOnly(code) {
     var charCode = code;
 
-    if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 8)
+    if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 8 || charCode == 229)
 
         return true;
     else
