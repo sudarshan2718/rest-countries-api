@@ -1,0 +1,34 @@
+@use './variables' as var;
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+    background-color: var.$Very-Light-Gray;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var.$Very-Dark-Blue;
+}
+.dark{
+    color: var.$White;
+    background-color: var.$Very-Dark-Blue;
+}
+
+.display{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+    li{
+        color: inherit;
+    }
+}

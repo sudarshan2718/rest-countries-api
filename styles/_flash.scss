@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    .flash {
+        z-index: 2;
+        font-family: inherit;
+        font-weight: 700;
+        font-style: italic;
+        padding: 0.5em 1em;
+        padding-right: 20%;
+        position: absolute;
+        top: 0.5em;
+        right: 0;
+        border-radius: 0.25em;
+
+        .flash-button {
+            font-style: normal;
+            padding: 0 0.5em;
+            content: "X";
+            cursor: pointer;
+        }
+    }
+}
+// .flash_animation{
+//     transition: transform 1000ms ease-in-out 100ms;
+//     transform: translateX(-20%);
+//     @media (min-width: 768px) {
+//         transform: translateX(-20%);
+//     }
+// }
+.greenColor {
+    color: white;
+    background-color: green;
+}
+.redColor {
+    color: white;
+    background-color: red;
+}
