@@ -4,7 +4,7 @@ let display_search_countries = () => search_countries.classList.toggle("display"
 let country_names = null;
 let container = document.querySelector(".container")
 
-fetch('/countries.json').then(response => response.json()).then(data => {
+fetch('https://sudarshanvemarapu.github.io/rest-countries-api/countries.json').then(response => response.json()).then(data => {
     data = data.map((c) => {
         let li = document.createElement("li")
         li.className = 'dropdown-country'
