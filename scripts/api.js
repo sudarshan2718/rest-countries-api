@@ -95,7 +95,7 @@ function load_country_by_region(country_region) {
             let { name, flag, population, region, capital } = country
             createCountry(name, flag, population, region, capital)
         }
-        // console.log(data.length)
+        
     }).catch(function (error) {
         flash(`${country_region} is not a region`, ERROR)
         console.error(error.message);
@@ -129,27 +129,3 @@ function load_by_full_name(country_name) {
     })
 }
 
-
-
-
-
-
-
-
-// createCountry('India', "https://restcountries.eu/data/ind.svg", 1295210000, 'Asia', 'New Delhi')
-// main page
-// flag, name, population, region, capital
-// "https://restcountries.eu/data/ind.svg"
-// India
-// भारत
-// 1295210000
-// Asia
-// New Delhi
-
-// details
-// flag
-// name, native name, population, region, sub region, capital
-// top level domain , currencies, languages
-// border countries
-
-// https://restcountries.eu/rest/v2/all?fields=name;capital;flag;population;region;subregion;currencies;languages;borders
