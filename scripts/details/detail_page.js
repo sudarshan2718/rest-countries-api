@@ -115,24 +115,12 @@ function load_by_code(code) {
     return name
 }
 
-// renderPage(
-//     'United States of America',
-//     "https://restcountries.eu/data/ind.svg",
-//     "Americas",
-//     323947000,
-//     "Northern America",
-//     "Washington, D.C.",
-//     "United States",
-//     ['English'],
-//     ["CAN", "MEX"],
-//     [".us"],
-//     ['United States dollar']
-// )
+
 
 if (localStorage.getItem('country') !== 'undefined') {
     load_by_full_name(localStorage.getItem('country'))
     localStorage.setItem('country', 'undefined');
 } else {
-    window.location = 'https://sudarshanvemarapu.github.io/rest-countries-api/index.html'
+    window.location = 'https://sudarshan2718.github.io/rest-countries-api/index.html'
 }
 
