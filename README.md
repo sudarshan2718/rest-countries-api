@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [my solution](https://github.com/SUDARSHANVEMARAPU/rest-countries-api.git)
-- Live Site URL: [live site](https://sudarshanvemarapu.github.io/rest-countries-api/)
+- Solution URL: [my solution](https://github.com/sudarshan2718/rest-countries-api.git)
+- Live Site URL: [live site](https://sudarshan2718.github.io/rest-countries-api/)
 
 ## My process
 
