@@ -155,7 +155,7 @@ function createCountry(_name, _imgsrc, _population, _region, _capital) {
 
     card.addEventListener('click',() => {
         localStorage.setItem('country',_name);
-        window.location = 'https://sudarshanvemarapu.github.io/rest-countries-api/details.html'
+        window.location = 'https://sudarshan2718.github.io/rest-countries-api/details.html'
     })
 }
 
