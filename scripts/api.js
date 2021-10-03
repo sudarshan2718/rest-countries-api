@@ -4,7 +4,7 @@ let country_index = 0;
 
 async function fetchAllCountries() {
     let countryData = null;
-    let url = "https://restcountries.eu/rest/v2/all?fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain"
+    let url = "https://restcountries.com/v3.1/all?fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain"
     await fetch(url)
         .then(function (response) {
             return response.json()
@@ -20,7 +20,7 @@ async function fetchAllCountries() {
 
 async function fetchByregion(country_region) {
     let countryData = null;
-    let url = `https://restcountries.eu/rest/v2/region/${country_region.toLowerCase()}?fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain`;
+    let url = `https://restcountries.com/v3.1/region/${country_region.toLowerCase()}?fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain`;
     await fetch(url)
         .then(function (response) {
             return response.json()
@@ -36,13 +36,12 @@ async function fetchByregion(country_region) {
 // name, flag, population, region, capital
 async function fetchByName(country_name) {
     let countryData = null;
-    let url = `https://restcountries.eu/rest/v2/name/${country_name.toLowerCase()}?fields=name;capital;flag;population;region;`;
+    let url = `https://restcountries.com/v3.1/name/${country_name.toLowerCase()}?fields=name;capital;flag;population;region;`;
     await fetch(url)
         .then(function (response) {
             return response.json()
         }).then(data => {
-            countryData = data;
-        })
+            countryData = data;        })
         .catch(function (error) {
             flash(`${country_name} not found`, ERROR)
             console.error(error.message);
@@ -52,7 +51,7 @@ async function fetchByName(country_name) {
 
 async function fetchByFullName(country_name) {
     let countryData = null;
-    let url = `https://restcountries.eu/rest/v2/name/${country_name.toLowerCase()}?fullText=true&fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain`;
+    let url = `https://restcountries.com/v3.1/name/${country_name.toLowerCase()}?fullText=true&fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain`;
     await fetch(url)
         .then(function (response) {
             return response.json()
