@@ -71,7 +71,7 @@ function renderPage(_name, _imgsrc, _region, _population, _sub_region, _capital,
 
 async function fetchByFullName(country_name) {
     let countryData = null;
-    let url = `https://restcountries.com/v3.1/name/${country_name.toLowerCase()}?fullText=true&fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain;nativeName`;
+    let url = `https://restcountries.com/v2/name/${country_name.toLowerCase()}?fullText=true&fields=name,capital,flag,population,region,subregion,currencies,languages,borders,topLevelDomain,nativeName`;
     await fetch(url)
         .then(function (response) {
             return response.json()
@@ -100,7 +100,7 @@ function load_by_full_name(country_name) {
 
 function load_by_code(code) {
     let name = null;
-    fetch(`https://restcountries.com/v3.1/alpha/${code}?fields=name;capital;flag;population;region;subregion;currencies;languages;borders;topLevelDomain;nativeName`)
+    fetch(`https://restcountries.com/v2/alpha/${code}?fields=name,capital,flag,population,region,subregion,currencies,languages,borders,topLevelDomain,nativeName`)
         .then(response => response.json())
         .then(data => {
             
