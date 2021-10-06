@@ -104,7 +104,7 @@ search_bar.addEventListener('keyup', (event) => {
 
 ### Useful resources
 
-[REST Countries API](https://restcountries.eu)
+[REST Countries API](https://restcountries.com)
 
 
 ## Author
